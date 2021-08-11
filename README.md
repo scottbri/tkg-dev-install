@@ -1,9 +1,10 @@
 # Install Developer Tooling and capabilities on TKG
-This repository will help with the deployment and integration of developer required capabilities with Tanzu Kubernetes Grid (TKG) clusters provided by Tanzu Mission Control (TMC).
+This repository will help with the deployment and integration of developer required capabilities with Tanzu Kubernetes Grid (TKG) clusters provisioned by Tanzu Mission Control (TMC).
 
 TKG clusters are deployed on AWS, so you will need to be able to configure some things on AWS to get the full integration. If you have a full AWS account you can have the complete workflow automated. If you have a managed AWS account, you'll have to do some steps manually, mainly because cert-manager has [an issue yet to be resolved](https://github.com/jetstack/cert-manager/issues/2779).
 
-Developers requires:
+### Why
+The current features missing from a TKG install that a developer requires:
 - Ingress controller
 - A DNS domain name
 - A wildcard certificate for that DNS domain name

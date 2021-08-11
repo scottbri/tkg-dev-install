@@ -1,11 +1,11 @@
 #@data/values
 ---
-domain: failk8s.com
-wildcard_domain: training.failk8s.com
+domain: failk8s.com      #! Change this to your domain
+wildcard_domain: training.failk8s.com #! Change this to the base URL you want for all your URLs on your cluster
 privileged_clusterrole_name: vmware-system-tmc-psp-privileged
 aws:
-  access_key_id: ABCDEFGHIJKLM
-  secret_access_key: abABC1ABA1B1B2c/ABc3ABc/AbcdEFgHIJkl2abC
+  access_key_id: ABCDEFGHIJKLM   #! If you want route53 DNS automation, this is the access key for the role you made to handle DNS
+  secret_access_key: abABC1ABA1B1B2c/ABc3ABc/AbcdEFgHIJkl2abC  #! And this is the secret associated with it
   certs:
     email: user@example.com #! If you want to get notified by Let's encrypt of certificate expiration
 eduk8s:
